@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAQA,OAAO,CAAC,6EAAI;AACZ,OAAO,CAAC,8FAAI;ACTZ,AAAA,OAAO,CAAC;EACP,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;EAC9B,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;CAGb;;ADOD,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;CACb;;AAED,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,CAAC;CACT;;AAED,AAAA,EAAE,CAAC;EACF,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACT;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "styles.scss",
+        "components/_navigation.scss",
+        "pages/_contact.scss",
+        "pages/_home.scss",
+        "pages/_knowledges.scss",
+        "pages/_portfolio.scss",
+        "pages/_notFound.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

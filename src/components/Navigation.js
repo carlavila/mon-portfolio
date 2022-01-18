@@ -1,45 +1,41 @@
-import React from 'react';
-import {NavLink} from 'react-router-dom';
+import React from 'react'
+import "./navigation.css"
+import {useState} from 'react';
 
 const Navigation = () => {
+
+	const [showLinks, setShowLinks]= useState(false)
+
+	const handleShowLinks = () => {
+		setShowLinks(!showLinks)
+	}
+
 	return (
-		<div className="sidebar">
+		<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+			<ul className="navbar__links">
+				<li className="navbar__item">
+					<a href="/" className="navbar__link">
+						Accueil 
+					</a>
+					<a href="/competences" className="navbar__link">
+						Compétences
+					</a>
+					<a href="/projets" className="navbar__link">
+						Projets
+					</a>
+					<a href="/contact" className="navbar__link">
+						Contact
+					</a>
 
-		<div className="idContent">
-				<img src="./media/IMG_2389.jpg" alt="profil-picture" width="100%"  />
-				<h3>Carla Vila</h3>
-		</div>
-			<div className="navigation">
-				<ul>
-					<li>
-						<NavLink exact to="/" activeClassName="navActive">
-							<i className="fas fa-home"></i>
-							<span>Accueil</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink exact to="/competences" activeClassName="navActive">
-							<i className="fas fa-mountain"></i>
-							<span>Compétences</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink exact to="/projets" activeClassName="navActive">
-							<i className="fas fa-images"></i>
-							<span>Projets</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink exact to="/contact" activeClassName="navActive">
-							<i className="fas fa-address-book"></i>
-							<span>Contact</span>
-						</NavLink>
-					</li>
-				</ul>
-			</div>
-
+				</li>
+			</ul>
 			
-		</div>
+			<button className="navbar__burger" onClick={handleShowLinks}> 
+				<span className="burger-bar"></span>
+                        </button>
+
+
+		</nav>
 		
 	);
 };

@@ -1,0 +1,143 @@
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	min-height: 75px;
+	padding: 1rem;
+	background-color: black;
+	color: white;
+}
+
+.navbar__item {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+}
+
+.navbar__link {
+	padding: 0 5rem;
+	color: inherit;
+	display: inline;
+}
+
+.navbar__link:after {
+	content:"";
+	display: block;
+	width: 0%;
+	height: 1px;
+	background: white;
+	transition: width 0.3s ease-in-out;
+}
+.navbar__link:hover::after {
+	width: 100%;
+}
+
+
+.navbar__burger {
+	width:40px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	color: inherit;
+	display: none;
+}
+
+.navbar__cross {
+	width:40px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	color: inherit;
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+	.navbar {
+		justify-content: flex-end;
+	}
+	.navbar__links {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		right: -100vh;
+		bottom: 0;
+		width: 0px;
+		height: 100vh;
+		padding: 2rem;
+		visibility: hidden;
+		background-color: black;
+		transition: all .8s ease-in-out;
+	}
+	.show-nav .navbar__links {
+		right: 0;
+		width: 100vw;
+		visibility: visible;
+	}
+	.navbar__item {
+		padding-top: 70px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar__link {
+		display: block;
+		padding: 2rem;
+		font-size: 5vw;
+		display: inline;
+	}
+
+	.navbar__link:after {
+		content:"";
+		display: block;
+		width: 0%;
+		height: 2px;
+		background: white;
+		transition: width 0.3s ease-in-out;
+	}
+	.navbar__link:hover::after {
+		width: 100%;
+	}
+
+	.navbar__burger {
+		display:block;
+	}
+
+	.burger-bar,
+	.burger-bar::before,
+	.burger-bar::after {
+		display: block;
+		width: 40px;
+		height: 3px;
+		position: relative;
+		border-radius: 3px;
+		background: white;
+		transition: all .5s ease-in-out
+	}
+	.burger-bar::before,
+	.burger-bar::after {
+		content:"";
+		position: absolute;
+		left:0;
+	}
+
+	.burger-bar::before {
+		transform: translateY(-12px);
+	}
+	.burger-bar::after {
+		transform: translateY(12px);
+	}
+	.show-nav .burger-bar {
+		background: transparent;
+	}
+	.show-nav .burger-bar::before {
+		transform: rotate(45deg);
+	}
+	.show-nav .burger-bar::after {
+		transform: rotate(-45deg);
+	}
+}

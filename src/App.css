@@ -1,19 +1,6 @@
-@import './components/navigation';
-@import './pages/contact';
-@import './pages/home';
-@import './pages/knowledges';
-@import './pages/portfolio';
-@import './pages/notFound';
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Shrikhand&display=swap');
 
-$font-1: 'Poppins', sans-serif;
-$font-2: 'Shrikhand', cursive;
-
-$white: #ddd;
-$black: #333;
 
 
 * {
@@ -35,4 +22,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+	cursor:pointer
 }

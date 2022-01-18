@@ -1,5 +1,4 @@
 import React from 'react';
-import Copyright from '../components/Copyright';
 import Navigation from '../components/Navigation';
 
 const Knowledges = () => {
@@ -7,7 +6,6 @@ const Knowledges = () => {
 		<div>
 			<Navigation />
 
-			<Copyright />
 		</div>
 	);
 };
