@@ -1,9 +1,11 @@
 import React from 'react';
 import Copyright from '../components/Copyright';
+import Navigation from '../components/Navigation';
 
 const Contact = () => {
 	return (
 		<div>
+			<Navigation />
 			<div className="socialNetwork">
 				<ul>
 					<li>

@@ -5,9 +5,9 @@ import "./copyright.css";
 const Copyright = () => {
 	return (
 		<div>
-			<div className="signature">
+			<footer className="signature">
 				<p>Copyright 2022 Carla Vila</p>
-			</div>
+			</footer>
 		</div>
 	);
 };

@@ -1,41 +1,41 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./navigation.css"
-import {useState} from 'react';
+import {FiMenu, FiX} from 'react-icons/fi';
 
-const Navigation = () => {
 
-	const [showLinks, setShowLinks]= useState(false)
+const Navigation = ({navbarLinks}) => {
 
-	const handleShowLinks = () => {
-		setShowLinks(!showLinks)
-	}
+	const [menuClicked, setMenuClicked] = useState(false);
+
+	const toggleMenuClicked = () => {
+		setMenuClicked(!menuClicked);
+	};
 
 	return (
-		<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-			<ul className="navbar__links">
-				<li className="navbar__item">
-					<a href="/" className="navbar__link">
-						Accueil 
-					</a>
-					<a href="/competences" className="navbar__link">
-						Compétences
-					</a>
-					<a href="/projets" className="navbar__link">
-						Projets
-					</a>
-					<a href="/contact" className="navbar__link">
-						Contact
-					</a>
+		<nav className="navbar">
 
-				</li>
+			{menuClicked ? (
+				<FiMenu size={25} className="navbar__menu" onClick={toggleMenuClicked}/> 
+				
+			) : ( 
+				<FiX size={25} className="navbar__menu" onClick={toggleMenuClicked}/> 
+			
+			)}
+
+			<ul className={menuClicked ? "navbar__list" : "navbar__list navbar__list--active"}>
+				{navbarLinks.map((item) => {
+					return (
+						<li className="navbar__item" key ={item.title}>
+							<a className="navbar__link" href={item.url}>
+								{item.title}
+							</a>
+						</li>
+					);
+				})}
 			</ul>
 			
-			<button className="navbar__burger" onClick={handleShowLinks}> 
-				<span className="burger-bar"></span>
-                        </button>
-
-
 		</nav>
+			
 		
 	);
 };
