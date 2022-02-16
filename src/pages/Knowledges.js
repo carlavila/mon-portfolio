@@ -5,7 +5,8 @@ import Navigation from '../components/Navigation';
 const Knowledges = () => {
 	return (
 		<div>
-
+			<Navigation />
+			<Copyright />
 		</div>
 	);
 };

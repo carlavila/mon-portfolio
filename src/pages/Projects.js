@@ -10,17 +10,12 @@ import "./project.css";
 import './projects/projects.css';
 import Copyright from '../components/Copyright';
 
-const navbarLinks = [
-	{url:"/", title: "Accueil"},
-	{url:"/competences", title: "Compétences"},
-	{url:"/projets", title: "Projets"},
-	{url:"/contact", title: "Contact"}
-]
+
 
 const Projects = () => {
 	return (
 		<div>
-			<Navigation navbarLinks={navbarLinks} />
+			<Navigation />
 			
 			<h1 className="title">Projets - Réalisations</h1>
 			

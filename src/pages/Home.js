@@ -9,18 +9,13 @@ import Copyright from '../components/Copyright';
 import '../pages/home.css';
 
 
-const navbarLinks = [
-	{url:"/", title: "Accueil"},
-	{url:"/competences", title: "Compétences"},
-	{url:"/projets", title: "Projets"},
-	{url:"/contact", title: "Contact"}
-]
+
 
 function Home() {
 	return (
 	
 		<div className="Home">
-			<Navigation navbarLinks={navbarLinks} />
+			<Navigation />
 			<Img1 imageSrc={img_1}/>
 			
 			<Slider 

@@ -1,43 +1,52 @@
-import React, {useState} from 'react'
-import "./navigation.css"
+import React, {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import {FiMenu, FiX} from 'react-icons/fi';
+import "./navigation.css"
 
 
-const Navigation = ({navbarLinks}) => {
 
-	const [menuClicked, setMenuClicked] = useState(false);
-
-	const toggleMenuClicked = () => {
-		setMenuClicked(!menuClicked);
-	};
-
+const Navigation = () => {
+	const [click, setClick] = useState(false);
+	const handleClick = () => setClick(!click);
 	return (
-		<nav className="navbar">
-
-			{menuClicked ? (
-				<FiMenu size={25} className="navbar__menu" onClick={toggleMenuClicked}/> 
-				
-			) : ( 
-				<FiX size={25} className="navbar__menu" onClick={toggleMenuClicked}/> 
-			
-			)}
-
-			<ul className={menuClicked ? "navbar__list" : "navbar__list navbar__list--active"}>
-				{navbarLinks.map((item) => {
-					return (
-						<li className="navbar__item" key ={item.title}>
-							<a className="navbar__link" href={item.url}>
-								{item.title}
-							</a>
+		<>
+			<nav className="navbar">
+				<div className="nav-container">
+					<ul className={click ? "nav-menu active" : "nav-menu"}>
+						<li className="nav-item">
+							<NavLink to="/" className="nav-links" onClick={handleClick}>
+								Accueil
+							</NavLink>
 						</li>
-					);
-				})}
-			</ul>
+						<li className="nav-item">
+							<NavLink to="/competences" activeclassname="active" className="nav-links" onClick={handleClick}>
+								Compétences
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink to="/projets" className="nav-links" onClick={handleClick}>
+								Projets
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink to="/contact" className="nav-links" onClick={handleClick}>
+								Contact
+							</NavLink>
+						</li>
+					</ul>
+					{click ? (
+						 <FiX size={25} className="nav__icon" onClick={handleClick}/> 
+					) : ( 
+						<FiMenu size={25} className="nav__icon" onClick={handleClick}/>
 			
-		</nav>
-			
-		
+					)}
+					
+				</div>
+			</nav>
+		</>
 	);
 };
 
 export default Navigation;
+
+
