@@ -2,35 +2,27 @@
 	position: sticky;
 	top: 0px;
 	height: 80px;
-	background-color: white;
+	background-color:white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: -70px;
 	z-index: 5;
 }
-      /*
-	This is the container for all the navbar links ( <ul> )
-	*/
+      
 .navbar__list {
 	display: flex;
 	list-style: none;
 }
-      
-      /*
-	This is a single item ( <li> ) in the list
-	*/
+       
 .navbar__item {
 	white-space: nowrap;
 }
       
-      /*
-	The anchor tag ( <a> ) for the navbar links
-	*/
 .navbar__link {
-	font-size: 14px;
+	font-size: 12px;
 	text-decoration: none;
 	color: black;
+	letter-spacing: .1rem;
 	font-weight: 200;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -50,8 +42,9 @@
 	cursor: pointer;
 }
       
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 900px) {
 	.navbar__list {
+		display:none;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -91,6 +84,7 @@
 		border-width: 0px;
 		background-color: white;
 		opacity: 1;
+		letter-spacing: .1rem;
 	}
       
 	.navbar__link:hover {
