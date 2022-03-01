@@ -15,8 +15,10 @@ const Slider = ({imageSrc, title, subtitle, subtitle1, subtitle2, subtitle3, sub
 				<>
 					<img src={imageSrc} alt="presentation" className="slider__image"/>
 					<div className="slider__content">
-						<h1 className="slider__title">{title}</h1>
-						<p className="slider__paragraphe">{subtitle}</p>
+						<h3 className="slider__title">{title}</h3>
+						<div className="paragraphs">
+							<p className="slider__paragraphe">{subtitle}</p>
+						</div>
 					</div>
 				</>
 			);
@@ -24,11 +26,13 @@ const Slider = ({imageSrc, title, subtitle, subtitle1, subtitle2, subtitle3, sub
 			return ( 
 				<>
 					<div className="slider__content">
-						<h1 className="slider__title">{title}</h1>
-						<p className="slider__paragraphe1">{subtitle1}</p>
-						<p className="slider__paragraphe2">{subtitle2}</p>
-						<p className="slider__paragraphe3">{subtitle3}</p>
-						<p className="slider__paragraphe4">{subtitle4}</p>
+							<h3 className="slider__title">{title}</h3>
+							<div className="paragraphs">
+								<p className="slider__paragraphe1">{subtitle1}</p>
+								<p className="slider__paragraphe2">{subtitle2}</p>
+								<p className="slider__paragraphe3">{subtitle3}</p>
+								<p className="slider__paragraphe4">{subtitle4}</p>
+							</div>
 					</div>
 					<img src={imageSrc} alt="presentation" className="slider__image"/>
 					

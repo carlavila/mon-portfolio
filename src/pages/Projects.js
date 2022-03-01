@@ -1,13 +1,14 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
 import Project1 from './projects/Project1';
 import Project2 from './projects/Project2';
 import Project3 from './projects/Project3';
 import Project4 from './projects/Project4';
 import Project5 from './projects/Project5';
 import Project6 from './projects/Project6';
+import computer from '../media/computer.jpeg'
 import "./project.css";
 import './projects/projects.css';
+import Navigation from '../components/Navigation';
 import Copyright from '../components/Copyright';
 
 
@@ -16,8 +17,12 @@ const Projects = () => {
 	return (
 		<div>
 			<Navigation />
+
+			<div className="img__projects">
+				<img src={computer} alt="computer" className="img__computer" />
+				<h1 className="title__projects">Mes Projets</h1>
+			</div>
 			
-			<h1 className="title">Projets - Réalisations</h1>
 			
 			<div className="projectsContent">
 					<Project1 />

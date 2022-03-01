@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import {FiMenu, FiX} from 'react-icons/fi';
+import {FiX} from 'react-icons/fi';
+import {IoIosMenu} from "react-icons/io";
+
 import "./navigation.css"
 
 
@@ -37,7 +39,7 @@ const Navigation = () => {
 					{click ? (
 						 <FiX size={25} className="nav__icon" onClick={handleClick}/> 
 					) : ( 
-						<FiMenu size={25} className="nav__icon" onClick={handleClick}/>
+						<IoIosMenu size={25} className="nav__icon" onClick={handleClick}/>
 			
 					)}
 					

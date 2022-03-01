@@ -1,4 +1,6 @@
 import React from 'react';
+import {DiNodejsSmall, DiMongodb, DiGit, DiGithubBadge} from 'react-icons/di';
+import {SiPostman} from "react-icons/si";
 import './projects.css'
 
 const Project5 = () => {
@@ -13,10 +15,12 @@ const Project5 = () => {
 							<div className="text">
 								<h2>So peckocko</h2>
 								<p className="icons">
-									<img className="logo" src="./media/nodejs.png" alt="NodeJs"/>
+									<DiNodejsSmall className="logo" />
 									<img className="logo" src="./media/express.png" alt="Express"/>
-									<img className="logo" src="./media/mongodb.png" alt="Mongodb"/>
-									<img className="logo" src="./media/git.png" alt="Git"/>
+									<SiPostman className="logo" />
+									<DiMongodb className="logo" />
+									<DiGit className="logo" />
+									<DiGithubBadge className="logo" />
 								</p>
 								<p className="description">Développement <strong>back end</strong> d'une application <strong>d'avis gastronomique</strong></p>
 								<button className="custom-btn btn"><a href="https://github.com/carlavila/p6-so-peckocko">Voir le projet</a></button>

@@ -1,6 +1,7 @@
 import React from 'react';
+import {DiHtml5, DiCss3, DiGit, DiGithubBadge} from 'react-icons/di';
+import { SiLighthouse} from "react-icons/si";
 import './projects.css'
-
 const Project3 = () => {
 	return (
 			<div className = "item">
@@ -11,10 +12,11 @@ const Project3 = () => {
 							<div className="text">
 								<h2>La chouette agence</h2>
 								<p className="icons">
-									<img className="logo" src="./media/google-lighthouse.png" alt="Lighthouse"/>
-									<img className="logo" src="./media/html5.png" alt="Html5"/>
-									<img className="logo" src="./media/css3.png" alt="Css3"/>
-									<img className="logo" src="./media/git.png" alt="Git"/>
+									<SiLighthouse className="logo" />
+									<DiHtml5 className="logo" />
+									<DiCss3 className="logo" />
+									<DiGit className="logo" />
+									<DiGithubBadge className="logo" />
 								
 								</p>
 								<p className="description">Optimisation du <strong>référencement SEO</strong></p>
