@@ -1,1 +1,298 @@
+.container-contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
 
+.infos-contact {
+  width: 50%;
+}
+
+.title-infos {
+  font-size: 25px;
+  letter-spacing: .9rem;
+  color: white;
+  margin-bottom: 70px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+.symbole {
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.lien {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 30px 10px;
+}
+
+h2 {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.form-content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 105px;
+  margin-bottom: 45px;
+}
+
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: white;
+}
+
+input::placeholder, 
+textarea::placeholder {
+ color: rgb(173, 173, 173);
+}
+
+input,
+.email-content,
+textarea {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 20px 10px 15px;
+  margin-top: 30px;
+  background-color: black;
+  border: 1px solid white;
+  background: transparent;
+}
+
+.email-content {
+  position: relative;
+}
+
+.email-content input {
+  width: 100%;
+}
+
+#not-mail {
+  display: none;
+  position: absolute;
+  top: 4px;
+  color: #ff4d4d;
+  right: 0;
+  transform-origin: 50% 50%;
+}
+
+@keyframes dongle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+textarea {
+  resize: none;
+  padding: 20px 10px 15px;
+  margin-top: 30px;
+  background-color: black;
+  border: 1px solid white;
+  background: transparent;
+}
+
+button {
+  width: 90%;
+}
+
+.costum-button {
+  letter-spacing: 2px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+  display: block;
+  margin: 0 auto;
+}
+
+.button {
+  color: white;
+  border: 3px solid white;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+.send {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.error::placeholder {
+  color: #ff4d4d;
+}
+
+.form-message {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px;
+  opacity: 0;
+  transition: 0.2s ease;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+}
+
+@media screen and (max-width: 1100px) {
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-info {
+  }
+
+  .infos-contact {
+    width: 100%;
+    margin: 0 30px 50px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .title-infos {
+    font-size: 20px;
+  }
+
+  .symbole {
+    font-size: 30px;
+  }
+  
+  .lien {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .title-infos {
+    font-size: 18px;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  .div-info {
+    margin: 20px;
+  }
+
+  .symbole {
+    font-size: 25px;
+  }
+  
+  .lien {
+    font-size: 11px;
+  }
+
+  .contact {
+    margin:0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .title-infos {
+    font-size: 17px;
+  }
+
+  .infos-contact {
+    padding: 0 10px 50px;
+  }
+
+  .contact-form {
+    padding: 0 10px 50px;
+  }
+
+  .symbole {
+    font-size: 20px;
+  }
+  
+  .lien {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-infos {
+    font-size: 15px;
+  }
+  .symbole {
+    font-size: 18px;
+  }
+  .lien {
+    letter-spacing: 1px;
+  }
+}
