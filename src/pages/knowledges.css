@@ -69,6 +69,7 @@
 	  opacity: 1;
 	}
 }
+
 @keyframes focus-in-contract-bck {
 	0% {
 	  letter-spacing: 1em;
@@ -153,6 +154,7 @@
 	color: white;
 }
 
+
 @media screen and (max-width: 1100px) {
 	.title__knowledges {
 		left: 45%;
@@ -163,6 +165,7 @@
 	.title_info {
 		font-size: 20px;
 	}
+
 	.p {
 		font-size: 12px;
 	}
@@ -177,6 +180,7 @@
 	.title_info {
 		font-size: 18px;
 	}
+
 	.p {
 		font-size: 11px;
 	}
@@ -191,9 +195,11 @@
 		left: 15%;
 		font-size: 18px;
 	}
+
 	.title_info {
 		font-size: 17px;
 	}
+
 	.p {
 		font-size: 10px;
 	}
@@ -204,12 +210,15 @@
 		letter-spacing: .7rem;
 		font-size: 15px;
 	}
+
 	.title_info {
 		font-size: 15px;
 	}
+
 	.p {
 		font-size: 10px;
 	}
+	
 	.informations {
 		margin-left: 0;
 		margin-right: 0;

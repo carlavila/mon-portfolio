@@ -12,6 +12,7 @@
 	-webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
 @-webkit-keyframes fade-in {
 	0% {
 	  opacity: 0;
@@ -81,6 +82,7 @@
 	  opacity: 1;
 	}
 }
+
 
 @media screen and (max-width: 1100px) {
 	.title__projects {

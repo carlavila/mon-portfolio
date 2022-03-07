@@ -6,7 +6,7 @@ const Copyright = () => {
 	return (
 		<div>
 			<footer className="signature">
-				<p>Copyright 2022 Carla Vila</p>
+				<p>Carla Vila © | Tous droits réservés.</p>
 			</footer>
 		</div>
 	);
