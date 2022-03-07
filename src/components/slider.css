@@ -33,9 +33,9 @@
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: 1rem;
 	text-transform: uppercase;
-	font-size: 45px;
+	font-size: 40px;
 	color: white;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .paragraphs {
@@ -43,7 +43,7 @@
 }
 
 .slider__paragraphe, .slider__paragraphe1, .slider__paragraphe2, .slider__paragraphe3, .slider__paragraphe4 {
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 200;
 	font-family: 'Jost', sans-serif;
 	letter-spacing: 3px;
@@ -74,7 +74,7 @@
 
 	.slider__title {
 		margin-top: 30px;
-		font-size: 40px;	
+		font-size: 35px;	
 	}
 
 	.paragraphs {
@@ -82,7 +82,7 @@
 	}
 
 	.slider__paragraphe, .slider__paragraphe1, .slider__paragraphe2, .slider__paragraphe3, .slider__paragraphe4 {
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 
@@ -104,7 +104,7 @@
 	} 
 
 	.slider__title {
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	.paragraphs {
@@ -118,8 +118,8 @@
 }
 @media screen and (max-width: 480px) {
 	.slider__title {
-		font-size: 30px;
-		letter-spacing: .4rem;
+		font-size: 25px;
+		letter-spacing: .6rem;
 	}
 
 	.paragraphs {
@@ -127,15 +127,14 @@
 	}
 
 	.slider__paragraphe, .slider__paragraphe1, .slider__paragraphe2, .slider__paragraphe3, .slider__paragraphe4 {
-		font-size: 10px;
+		font-size: 12px;
 		padding: 15px;
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.slider__title {
-		font-size: 25px;
-		letter-spacing: .2rem;
+		font-size: 18px;
 	}
 
 	.paragraphs {
@@ -143,7 +142,6 @@
 	}
 	
 	.slider__paragraphe, .slider__paragraphe1, .slider__paragraphe2, .slider__paragraphe3, .slider__paragraphe4 {
-		font-size: 10px;
 		padding: 10px;
 	}
 }

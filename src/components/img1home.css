@@ -14,13 +14,13 @@
 }
 
 .img1_title {	
-	position: absolute;
-	background-color: #5553534d;
+	position: absolute;	
 	text-align: center;
 	line-height: 1;
 	top: 35%;
 	left: 17%;
 	width: 65%;
+	border: 1px solid rgb(185, 185, 185);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	padding: 35px 35px;
@@ -69,17 +69,20 @@
 	}
 
 	.img1_title {
+		border: none;
 		top: 40%;
+		width: 100%;
+		left: 0;
 	}
 
 	.img1__h1 {
 		font-size: 65px;
-		letter-spacing: 1rem;
+		line-height : 1.5;
 	}
 
 	.img1_h2 {
 		font-size: 20px;
-		letter-spacing: .8rem;
+		line-height : 1.5;
 	}
 
 }
@@ -91,12 +94,11 @@
 
 	.img1__h1 {
 		font-size: 55px;
-		letter-spacing: .6rem;
+		
 	}
 
 	.img1_h2 {
 		font-size: 17px;
-		letter-spacing: .6rem;
 	}	
 } 
 
@@ -108,12 +110,12 @@
 
 	.img1__h1 {
 		font-size: 50px;
-		letter-spacing: .4rem;
+		letter-spacing: .8rem;
 	}
 
 	.img1_h2 {
 		font-size: 15px;
-		letter-spacing: .4rem;
+		letter-spacing: .6rem;
 	}
 }
 
@@ -124,11 +126,11 @@
 
 	.img1__h1 {
 		font-size: 35px;
-		letter-spacing: .2rem;
+		letter-spacing: .7rem;
 	}
 
 	.img1_h2 {
 		font-size: 13px;
-		letter-spacing: .2rem;
+		letter-spacing: .5rem;
 	}
 }

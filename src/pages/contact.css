@@ -3,6 +3,24 @@
   flex-direction: row;
   margin-top: 40px;
   margin-bottom: 50px;
+  -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+      @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
 }
 
 .infos-contact {
@@ -14,39 +32,178 @@
   letter-spacing: .9rem;
   color: white;
   margin-bottom: 70px;
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+	0% {
+	  letter-spacing: 0.9em;
+	  -webkit-transform: translateZ(300px);
+		  transform: translateZ(300px);
+	  -webkit-filter: blur(12px);
+		  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateZ(12px);
+		  transform: translateZ(12px);
+	  -webkit-filter: blur(0);
+		  filter: blur(0);
+	  opacity: 1;
+	}
+}
+@keyframes focus-in-contract-bck {
+	0% {
+	  letter-spacing: 0.9em;
+	  -webkit-transform: translateZ(300px);
+		  transform: translateZ(300px);
+	  -webkit-filter: blur(12px);
+		  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateZ(12px);
+		  transform: translateZ(12px);
+	  -webkit-filter: blur(0);
+		  filter: blur(0);
+	  opacity: 1;
+	}
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .div-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   margin-top: 20px;
 }
 
+.pdf {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.pdf-cv {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.pdf:hover {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.download {
+  margin-left: 15px;
+  color: black;
+  font-size: 15px;
+}
+
 .symbole {
-  margin-bottom: 20px;
-  font-size: 35px;
+  margin-bottom: 15px;
+  font-size: 45px;
   color: white;
 }
 
+.symbole:hover {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
 .lien {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 3px;
   color: white;
 }
 
 .contact-form {
   width: 50%;
-  margin: 0 30px 10px;
 }
 
 h2 {
@@ -57,7 +214,7 @@ h2 {
 .form-content {
   display: grid;
   grid-template-rows: repeat(4, 1fr) 105px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 input,
@@ -101,6 +258,9 @@ input {
   position: absolute;
   top: 4px;
   color: #ff4d4d;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   right: 0;
   transform-origin: 50% 50%;
 }
@@ -150,20 +310,10 @@ textarea {
   background: transparent;
 }
 
-button {
-  width: 90%;
-}
 
 .costum-button {
   letter-spacing: 2px;
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 20px;
-  color: #212121;
-  font-size: 15px;
-  font-weight: 600;
+  color: black;
   cursor: pointer;
   transition: 0.4s;
   display: block;
@@ -171,18 +321,27 @@ button {
 }
 
 .button {
-  color: white;
-  border: 3px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
 }
 
 .button:hover {
-  color: black;
-  background-color: white;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .send {
-  font-size: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
+  color: black;
+  font-size: 15px;
 }
 
 .error::placeholder {
@@ -197,6 +356,10 @@ button {
   opacity: 0;
   transition: 0.2s ease;
   color: black;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }
@@ -208,8 +371,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .div-info {
   }
 
   .infos-contact {
@@ -226,11 +387,18 @@ button {
   }
 
   .symbole {
-    font-size: 30px;
+    font-size: 40px;
   }
-  
-  .lien {
-    font-size: 11px;
+
+  .pdf-cv {
+    font-size: 12px;
+  }
+  .download {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 12px;
   }
 }
 
@@ -249,16 +417,25 @@ button {
   }
 
   .symbole {
-    font-size: 25px;
+    font-size: 35px;
   }
-  
-  .lien {
+
+  .pdf-cv {
     font-size: 11px;
   }
 
-  .contact {
-    margin:0px;
+  .download {
+    font-size: 15px;
   }
+
+  .button {
+    font-size: 11px;
+  }
+
+  .form-message {
+    font-size: 11px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -267,21 +444,21 @@ button {
     font-size: 17px;
   }
 
-  .infos-contact {
-    padding: 0 10px 50px;
-  }
-
-  .contact-form {
-    padding: 0 10px 50px;
-  }
 
   .symbole {
-    font-size: 20px;
+    font-size: 30px;
   }
-  
-  .lien {
-    font-size: 10px;
-    letter-spacing: 2px;
+
+  .pdf-cv {
+    font-size: 11px;
+  }
+
+  .download {
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 11px;
   }
 }
 
@@ -289,10 +466,5 @@ button {
   .title-infos {
     font-size: 15px;
   }
-  .symbole {
-    font-size: 18px;
-  }
-  .lien {
-    letter-spacing: 1px;
-  }
+
 }

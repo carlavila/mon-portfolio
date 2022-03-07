@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Copyright from '../components/Copyright';
 import Navigation from '../components/Navigation';
-import { GoLocation } from "react-icons/go";
-import { DiGithubBadge } from 'react-icons/di';
+import { BsGithub } from "react-icons/bs";
 import { FaLinkedin, FaArtstation } from "react-icons/fa";
-import { IoIosSend } from "react-icons/io";
+import { FiDownload } from "react-icons/fi";
+import { AiOutlineSend } from "react-icons/ai";
 import './contact.css';
 
 const Contact = () => {
@@ -106,26 +106,32 @@ const Contact = () => {
 
             <div className="contact">
               <div className="div-info">
-                  <GoLocation className="symbole" />
-                  <a className="lien"href="#">Bordeaux</a>
-                </div>
+      
                 <div className="div-info">
-                  <FaLinkedin className="symbole" />
-                  <a className="lien"href="https://www.linkedin.com/in/vilacarla">https://www.linkedin.com/in/vilacarla</a>
+                  <a href="https://www.linkedin.com/in/vilacarla">
+                    <FaLinkedin className="symbole"/>
+                  </a>
                 </div>
+
                 <div className="div-info">
-                  <DiGithubBadge className="symbole" />
-                  <a className="lien"href="https://www.github.com/carlavila">https://www.github.com/carlavila</a>
+                  <a href="https://www.github.com/carlavila">
+                    <BsGithub className="symbole"/>
+                  </a>
                 </div>
+
                 <div className="div-info">
-                  <FaArtstation className="symbole" />
-                  <a className="lien"href="https://www.artstation.com/carlitovila">https://www.artstation.com/carlitovila</a>
+                  <a href="https://www.artstation.com/carlitovila">
+                    <FaArtstation className="symbole" />
+                  </a>
                 </div>
-							
-						
-							
+                <button className="pdf"> 
+                  <a className="pdf-cv" href="./media/cv.pdf" target="_blank"> Télécharger mon CV</a>
+                  <FiDownload className="download"/>
+                </button>
 						</div>
+               
           </div>
+        </div>
 
           <form className="contact-form">
             <h2 className="title-infos">Contactez-moi</h2>
@@ -175,7 +181,7 @@ const Contact = () => {
                 value={message}
               />
             </div>
-            <button className="costum-button button"onClick={handleSubmit}> Envoyer <IoIosSend className="send" /> </button>
+            <button className="costum-button button"onClick={handleSubmit}> Envoyer <AiOutlineSend className="send" /> </button>
         <div className="form-message"></div>
       </form>
       </div>
