@@ -21,8 +21,8 @@
 	left: 17%;
 	width: 65%;
 	border: 1px solid rgb(185, 185, 185);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
 	padding: 35px 35px;
 	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -71,7 +71,7 @@
 
 	.img1_title {
 		border: none;
-		top: 40%;
+		top: 30%;
 		width: 100%;
 		left: 0;
 	}
@@ -90,16 +90,17 @@
 
 @media screen and (max-width: 600px) {
 	.img1_title {
-		top: 40%;	
+		top: 30%;	
 	}
 
 	.img1__h1 {
 		font-size: 55px;
-		
+		letter-spacing: 1rem;	
 	}
 
 	.img1_h2 {
 		font-size: 17px;
+		letter-spacing: .9rem;
 	}	
 } 
 
@@ -110,13 +111,14 @@
 	}
 
 	.img1__h1 {
-		font-size: 50px;
-		letter-spacing: .8rem;
+		font-size: 45px;
+		letter-spacing: .7rem;
+		line-height: .9;
 	}
 
 	.img1_h2 {
 		font-size: 15px;
-		letter-spacing: .6rem;
+		letter-spacing: .5rem;
 	}
 }
 

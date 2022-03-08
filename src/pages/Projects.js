@@ -17,23 +17,24 @@ const Projects = () => {
 	return (
 		<div>
 			<Navigation />
+			<div className="projects-container">
 
-			<div className="img__projects">
-				<img src={computer} alt="computer" className="img__computer" />
-				<h1 className="title__projects">Mes Projets</h1>
+				<div className="img__projects">
+					<img src={computer} alt="computer" className="img__computer" />
+					<h1 className="title__projects">Mes Projets</h1>
+				</div>
+				
+				
+				<div className="projectsContent">
+						<Project1 />
+						<Project2 />
+						<Project3 />
+						<Project4 />
+						<Project5 />
+						<Project6 />
+				</div>
 			</div>
-			
-			
-			<div className="projectsContent">
-					<Project1 />
-					<Project2 />
-					<Project3 />
-					<Project4 />
-					<Project5 />
-					<Project6 />
-			</div>
-
-		<Copyright />
+			<Copyright />
 			
 		</div>
 	);
