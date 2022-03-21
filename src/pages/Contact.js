@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { FaLinkedin, FaArtstation } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { AiOutlineSend } from "react-icons/ai";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
 import './contact.css';
 
 const Contact = () => {
@@ -98,15 +99,18 @@ const Contact = () => {
   return (
       <div>
         <Navigation />
+       
         <div className="container-contact">
-
+        <h2 className="title-infos">On rentre en contact ?</h2>
           <div className="infos-contact">
-
-            <h2 className="title-infos">Informations</h2>
-
+            
             <div className="contact">
-              <div className="div-info">
-      
+              
+                <div className="div-info">
+                  <a href="mailto:vila.carla@yahoo.fr">
+                    <MdOutlineMarkEmailRead className="symbole"/>
+                  </a>
+                </div>
                 <div className="div-info">
                   <a href="https://www.linkedin.com/in/vilacarla">
                     <FaLinkedin className="symbole"/>
@@ -123,18 +127,15 @@ const Contact = () => {
                   <a href="https://www.artstation.com/carlitovila">
                     <FaArtstation className="symbole" />
                   </a>
-                </div>
-                <button className="pdf"> 
+                </div>       
+          </div>
+          <button className="pdf"> 
                   <a className="pdf-cv" href="./media/cv.pdf" target="_blank"> Télécharger mon CV</a>
                   <FiDownload className="download"/>
-                </button>
-						</div>
-               
-          </div>
+          </button>
         </div>
 
           <form className="contact-form">
-            <h2 className="title-infos">Contactez-moi</h2>
             <div className="form-content">
               <input
                 type="text"

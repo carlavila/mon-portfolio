@@ -1,6 +1,6 @@
 .navbar {
+	background: white;
 	background: black;
-	background: #f5f3f4;
 	height: 80px;
 	display: flex;
 	justify-content: center;
@@ -9,8 +9,9 @@
 	top: 0;
 	position: static;
 	z-index: 20;
+	border-bottom: 1px solid rgb(211, 211, 211);
 }
-      
+        
 .nav-container {
 	display: flex;
 	justify-content: center;
@@ -28,16 +29,14 @@
 }
       
 .nav-links {
-	color: black;
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 200;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Jost', sans-serif;
 	font-size: 11px;
 	letter-spacing: .2rem;
 	padding: 0.5rem 1rem;
 	height: 100%;
-	/*border-bottom: 3px solid transparent;*/
 	padding-left: 70px;
 	padding-right: 70px;
 }
@@ -52,19 +51,19 @@
       
 .nav-item:hover:after {
 	width: 100%;
-	background: black;
+	background: white;
 	font-weight: 600;
 }
       
 .nav-item .active {
-	color: black;
-	border: 1px solid black;
+	color: white;
+	border: 1px solid white;
 	font-weight: 600;
 }
       
 .nav__icon {
 	display: none;
-	color: black;
+	color: white;
 }
    
 
@@ -83,7 +82,7 @@
 	}
       
 	.nav-menu.active {
-		background-color: #f5f3f4;
+		background-color: black;
 		left: 0px;
 		opacity: 1;
 		transition: all 0.5s ease;
@@ -92,7 +91,7 @@
 	}
 
 	.nav-item .active {
-		color: black;
+		color: white;
 		border: none;
 	}
 
@@ -100,7 +99,7 @@
 		padding: 1.5rem;
 		width: 100%;
 		display: table;
-		color: black;
+		color: white;
 	}
       
 	.nav__icon {
@@ -111,6 +110,6 @@
 		transform: translate(-100%, 100%);
 		font-size: 25px;
 		cursor: pointer;
-		color: black;
+		color: white;
 	}
 }

@@ -1,15 +1,16 @@
 .signature {
-	color:  black;
-	background-color: #f5f3f4;
+	color:  white;
+	background: black;
 	bottom: 0px;
 	width: 100%;
 	min-height: 75px;
 	padding: 2rem;
 	display: flex;
 	justify-content: center;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 200;
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: .2rem;;
+	font-family: 'Jost', sans-serif;
+	letter-spacing: .2rem;
+	border-top: 1px solid rgb(211, 211, 211);
 }
 
