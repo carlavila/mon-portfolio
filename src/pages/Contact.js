@@ -130,7 +130,7 @@ const Contact = () => {
                 </div>       
           </div>
           <button className="pdf"> 
-                  <a className="pdf-cv" href="./media/cv.png" target="_blank"> Télécharger mon CV</a>
+                  <a className="pdf-cv" href="./media/cv.pdf" target="_blank"> Télécharger mon CV</a>
                   <FiDownload className="download"/>
           </button>
         </div>
