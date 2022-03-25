@@ -22,7 +22,7 @@ const Projects = () => {
 
 					<div className="description-projects">
 						<p className="text-projects">Pendant mes études, j'ai été amenée à réaliser différents projets au sein de ma formation. Ces projets avaient pour but de mettre en pratique nos connaissances tout-en les approfondissant.
-Ils ont permis la manipulation de différents langages, d'appréhender la développement et de réaliser un projet aux normes.</p>
+Ils ont permis la manipulation de différents langages, d'appréhender le développement et de réaliser un projet aux normes.</p>
 					</div>
 				
 				<div className="projectsContent">
