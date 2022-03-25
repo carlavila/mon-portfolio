@@ -21,7 +21,7 @@ const Projects = () => {
 					<h1 className="title__projects">Mes Projets</h1>
 
 					<div className="description-projects">
-						<p className="text-projects">Pendant mes études, j'ai été amené à réaliser différents projets au sein de ma formation. Ces projets avaient pour but de mettre en pratique nos connaissances tout-en les approfondissant.
+						<p className="text-projects">Pendant mes études, j'ai été amenée à réaliser différents projets au sein de ma formation. Ces projets avaient pour but de mettre en pratique nos connaissances tout-en les approfondissant.
 Ils ont permis la manipulation de différents langages, d'appréhender la développement et de réaliser un projet aux normes.</p>
 					</div>
 				

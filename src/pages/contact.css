@@ -293,6 +293,7 @@ textarea {
   justify-content: space-around;
   align-items: center;
   padding: 15px;
+  font-family: 'Jost', sans-serif;
   background-color: white;
   border: 2px solid white;
   border-radius: 20px;
