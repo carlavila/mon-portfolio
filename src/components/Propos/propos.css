@@ -1,0 +1,94 @@
+.a-propos {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 5em;
+  border-radius: 0.5em;
+}
+
+.bloc-titles {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+
+.h2-propos {
+  color:#ac83ff;
+}
+.p-propos-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.portrait-image {
+  border-radius: 1.5rem;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.bloc2-propos {
+  width:650px;
+}
+.bloc-soft-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.softskills {
+  padding: 15px 50px;
+  border-radius: 0.5em;
+  background-color: #fbfbfb;
+  box-shadow: #e5d7ff 2px 3px 29px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.softskills:hover {
+  transform: scale(1.01); 
+  box-shadow: #ceb2ff 2px 3px 29px 2px; 
+}
+
+
+.logo-softskills {
+  width: 30px;
+}
+
+.p-softskills {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bloc-h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top:3em;
+}
+
+
+.p-propos{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.5;
+
+}
