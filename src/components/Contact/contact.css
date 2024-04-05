@@ -1,0 +1,100 @@
+.contact {
+  padding-top: 4em;
+  padding-bottom: 5em;
+}
+
+.bloc-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.bloc-contact {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.h2-contact {
+  color: #ac83ff;
+}
+.p-contact-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.item-contact {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background-color: #fbfbfb;
+  box-shadow: #e5d7ff 2px 3px 29px 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 0.3em;
+}
+.item-contact:hover {
+  box-shadow: #c3a1ff 5px 3px 30px 5px; 
+}
+
+.img-contact {
+  width: 40px;
+}
+
+.title-contact {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.contact-link {
+  bottom: 20px;
+  text-decoration: none;
+  color: #ac83ff;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.icon-arrow {
+  font-size: 25px;
+}
+.contact-link:hover .icon-arrow {
+  transition: transform 0.3s ease;
+  transform: translateX(5px);
+}
+
+.contact-link .icon-arrow {
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover .icon-arrow {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 1200px) {
+  .bloc-contact {
+    flex-direction: column;
+    align-items: center;
+    gap:3em;
+  }
+
+  .item-contact {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+
+  .item-contact {
+    width: 100%;
+  }
+}

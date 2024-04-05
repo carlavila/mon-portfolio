@@ -1,0 +1,33 @@
+[debug] [2024-03-29T13:10:35.584Z] ----------------------------------------------------------------------
+[debug] [2024-03-29T13:10:35.587Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2024-03-29T13:10:35.587Z] CLI Version:   13.6.0
+[debug] [2024-03-29T13:10:35.588Z] Platform:      darwin
+[debug] [2024-03-29T13:10:35.588Z] Node Version:  v18.17.1
+[debug] [2024-03-29T13:10:35.601Z] Time:          Fri Mar 29 2024 14:10:35 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2024-03-29T13:10:35.601Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-29T13:10:35.713Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-29T13:10:35.714Z] > authorizing via signed-in user (vilacarla2@gmail.com)
+[debug] [2024-03-29T13:10:35.715Z] [iam] checking project portfolio-carla for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-29T13:10:35.717Z] > refreshing access token with scopes: []
+[debug] [2024-03-29T13:10:35.719Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-29T13:10:35.719Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-29T13:10:36.063Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-29T13:10:36.064Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-29T13:10:36.065Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-carla:testIamPermissions [none]
+[debug] [2024-03-29T13:10:36.065Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-carla:testIamPermissions x-goog-quota-user=projects/portfolio-carla
+[debug] [2024-03-29T13:10:36.065Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-carla:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-29T13:10:36.665Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-carla:testIamPermissions 401
+[debug] [2024-03-29T13:10:36.665Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-carla:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-03-29T13:10:36.666Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-03-29T13:10:36.667Z] > refreshing access token with scopes: []
+[debug] [2024-03-29T13:10:36.667Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-29T13:10:36.667Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-29T13:10:36.735Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-29T13:10:36.735Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-29T13:10:36.736Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-carla [none]
+[debug] [2024-03-29T13:10:36.814Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-carla 401
+[debug] [2024-03-29T13:10:36.814Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-carla {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-03-29T13:10:36.815Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

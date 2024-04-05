@@ -2,7 +2,7 @@ import React from "react";
 import art from "../../media/art.png";
 import autonome from "../../media/autonome.png";
 import curieuse from "../../media/curieuse.png";
-import portrait2 from "../../media/portrait2.png";
+import portrait from "../../media/IMG_4974.jpg";
 import "./propos.css";
 
 const Propos = () => {
@@ -13,8 +13,8 @@ const Propos = () => {
         <p className="p-propos-title">Présentation</p>
       </div>
       <section className="section">
-        <div className="bloc1-propos">
-          <img src={portrait2} alt="portrait2" className="portrait-image" />
+        <div className="bloc1-propos"> 
+          <img src={portrait} alt="portrait" className="portrait-image" />
         </div>
 
         <div className="bloc2-propos">

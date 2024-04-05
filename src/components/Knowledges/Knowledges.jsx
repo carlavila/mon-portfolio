@@ -28,14 +28,13 @@ import kanban from "../../media/kanban.png";
 const Knowledges = () => {
   return (
     <div className="bloc-knowledges">
-
-<div className="bloc-titles">
+      <div className="bloc-titles">
         <h2 className="h2 h2-knowledges">Mes compétences</h2>
         <p className="p-knowledges-title">Hard Skills</p>
       </div>
       <div className="display-bloc">
         <div className="div-knowledges-code">
-          <div class="div-ronde">
+          <div className="div-ronde">
             <img src={code} alt="code" className="img-code" />
           </div>
           <h3 className="h3-knowledges">Développement</h3>
@@ -92,7 +91,7 @@ const Knowledges = () => {
         </div>
 
         <div className="div-knowledges-logiciel">
-          <div class="div-ronde">
+          <div className="div-ronde">
             <img src={logiciel} alt="logiciel" className="img-logiciel" />
           </div>
           <h3 className="h3-knowledges">Logiciels</h3>
@@ -121,7 +120,7 @@ const Knowledges = () => {
         </div>
 
         <div className="div-knowledges-gestion">
-          <div class="div-ronde">
+          <div className="div-ronde">
             <img src={gestion} alt="gestion" className="img-gestion" />
           </div>
           <h3 className="h3-knowledges">Gestion de projet</h3>
@@ -157,5 +156,4 @@ const Knowledges = () => {
   );
 };
 export default Knowledges;
-
-
+ 

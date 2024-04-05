@@ -1,22 +1,17 @@
 .a-propos {
-  margin-left: 2em;
-  margin-right: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
-  padding-left: 3em;
-  padding-right: 5em;
   border-radius: 0.5em;
 }
 
 .bloc-titles {
   display: flex;
   flex-direction: column;
-  gap:5px;
+  gap: 5px;
 }
 
-
 .h2-propos {
-  color:#ac83ff;
+  color: #ac83ff;
 }
 .p-propos-title {
   font-family: "Lato", sans-serif;
@@ -41,7 +36,7 @@
 }
 
 .bloc2-propos {
-  width:650px;
+  width: 650px;
 }
 .bloc-soft-skills {
   display: flex;
@@ -62,10 +57,9 @@
 }
 
 .softskills:hover {
-  transform: scale(1.01); 
-  box-shadow: #ceb2ff 2px 3px 29px 2px; 
+  transform: scale(1.01);
+  box-shadow: #c3a1ff 5px 3px 30px 5px;
 }
-
 
 .logo-softskills {
   width: 30px;
@@ -80,15 +74,64 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin-top:3em;
+  margin-top: 3em;
 }
 
-
-.p-propos{
+.p-propos {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 17px;
   line-height: 1.5;
+}
 
+@media screen and (max-width: 1200px) {
+  .bloc-titles {
+    align-items: center;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait-image,
+  .bloc2-propos {
+    width: 650px;
+  }
+  .bloc-h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portrait-image {
+    width: 100%;
+  }
+  .bloc2-propos {
+    width:100%;
+  }
+  .bloc-soft-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+  }
+  .softskills {
+    padding: 10px 40px;
+  }
+  .logo-softskills {
+    width: 20px;
+  }
+  
+  .p-softskills {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .bloc-soft-skills {
+    flex-direction: column;
+    gap:20px;
+  }
 }

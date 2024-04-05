@@ -19,3 +19,21 @@ a {
 button {
 	cursor:pointer
 }
+.Home{
+	margin-top: 4em;
+	margin-left: 6em;
+	margin-right: 6em;
+}
+@media screen and (max-width: 1200px) {
+	.Home{
+		margin-top: 2em;
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+}
+@media screen and (max-width: 650px) {
+	.Home{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
