@@ -25,6 +25,7 @@ import bpmn from "../../media/bpmn.png";
 import scrum from "../../media/scrum.png";
 import kanban from "../../media/kanban.png";
 
+
 const Knowledges = () => {
   return (
     <div className="bloc-knowledges">

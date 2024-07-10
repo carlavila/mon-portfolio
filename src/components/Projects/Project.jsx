@@ -61,7 +61,7 @@ const Projects = () => {
     } else if (filter === "design") {
       return ProjectsData.filter((project) => project.id === 4);
     } else if (filter === "accessibility_seo") {
-      return ProjectsData.filter((project) => [5, 11].includes(project.id));
+      return ProjectsData.filter((project) => [1, 5, 11].includes(project.id));
     }
   };
 

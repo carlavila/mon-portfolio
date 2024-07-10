@@ -9,10 +9,39 @@ import gameon from "../../media/gameon.png";
 import groupomania from "../../media/groupomania.png";
 import sopeckocko from "../../media/sopeckocko.png";
 import lachouetteagence from "../../media/lachouetteagence.png";
-
+import wealthhealth from "../../media/wealth-health.png"; 
+import librarydatereact from "../../media/library-date-react.png";
 const projectsData = [
   {
     id: 1,
+    title: "Library Date React",
+    image: librarydatereact,
+    description:
+      "Conversion d'un plugin jQuery en un composant React",
+    stack1: "Utilisation de cette bibliothèque dans le projet HRNet",
+    stack2:
+    "Utilisation de l'outil Open Source StoryBook",
+    stack3:
+    "Publication sur npm",
+    link: "https://github.com/carlavila/library-date-react",
+  },
+  {
+    id: 2,
+    title: "HRNet - Wealth Health",
+    image: wealthhealth,
+    description:
+      "Convertion d'une application en React",
+    stack1: "Utilisation de React pour le front-end",
+    stack2:
+    "Utilisation d'une bibliothèque de date React que j'ai crée",
+    stack3:
+    "Tests de performance Lighthouse en comparant l'ancienne et la nouvelle application",
+    stack4:
+      "Utilisation de Redux pour la gestion de l'état global de l'application ",
+    link: "https://github.com/carlavila/HRNet",
+  },
+  {
+    id: 3,
     title: "Argent Bank",
     image: bankapi,
     description:
@@ -22,8 +51,8 @@ const projectsData = [
       "Utilisation de Redux pour la gestion de l'état global de l'application ",
     link: "https://github.com/carlavila/Project-10-Bank-API",
   },
-  {
-    id: 2,
+  { 
+    id: 4,
     title: "Sportsee",
     image: sportsee,
     description:
@@ -33,7 +62,7 @@ const projectsData = [
     link: "https://github.com/carlavila/sportsee",
   },
   {
-    id: 3,
+    id: 5,
     title: "Kasa",
     image: kasa,
     description: "Développement d'une interface de location d’appartements",
@@ -43,7 +72,7 @@ const projectsData = [
     link: "https://github.com/carlavila/kasa",
   },
   {
-    id: 4,
+    id: 6,
     title: "Learn@Home",
     image: learnathome,
     description:
@@ -56,7 +85,7 @@ const projectsData = [
     link: "https://github.com/carlavila/learn-at-home",
   },
   {
-    id: 5,
+    id: 7,
     title: "Billed",
     image: billedapp,
     description: "Débugger et tester une application",
@@ -68,7 +97,7 @@ const projectsData = [
     link: "https://github.com/carlavila/bill-app",
   },
   {
-    id: 6,
+    id: 8,
     title: "Les petits plats",
     image: lespetitsplats,
     description:
@@ -78,7 +107,7 @@ const projectsData = [
     link: "https://github.com/carlavila/les_petits_plats",
   },
   {
-    id: 7,
+    id: 9,
     title: "Fisheye",
     image: fisheye,
     description: "Création d'une interface accessible de photographes",
@@ -86,7 +115,7 @@ const projectsData = [
     link: "https://github.com/carlavila/fisheye",
   },
   {
-    id: 8,
+    id: 10,
     title: "Game On",
     image: gameon,
     description: "Création d'une landing page",
@@ -94,7 +123,7 @@ const projectsData = [
     link: "https://github.com/carlavila/GameOn-website-FR",
   },
   {
-    id: 9,
+    id: 11,
     title: "Groupomania",
     image: groupomania,
     description: "Développement fullStack d'un réseau social d'entreprise.",
@@ -105,7 +134,7 @@ const projectsData = [
     link: "https://github.com/carlavila/groupomania",
   },
   {
-    id: 10,
+    id: 12,
     title: "So Peckocko",
     image: sopeckocko,
     description:
@@ -115,7 +144,7 @@ const projectsData = [
     link: "https://github.com/carlavila/so-peckocko",
   },
   {
-    id: 11,
+    id: 13,
     title: "La chouette agence",
     image: lachouetteagence,
     description: "Optimisation du référencement SEO et de l'accessibilité.",
