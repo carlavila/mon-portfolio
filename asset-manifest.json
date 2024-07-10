@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/github.io/mon-portfolio/static/css/main.55acd500.css",
+    "main.js": "/github.io/mon-portfolio/static/js/main.4cbea01d.js",
+    "static/media/IMG_4974.jpg": "/github.io/mon-portfolio/static/media/IMG_4974.17e970bf6c73495f2487.jpg",
+    "static/media/kasa.png": "/github.io/mon-portfolio/static/media/kasa.87602efeff2d6b791697.png",
+    "static/media/gameon.png": "/github.io/mon-portfolio/static/media/gameon.e41a49a42f3e904d42ff.png",
+    "static/media/learnathome.png": "/github.io/mon-portfolio/static/media/learnathome.c2bc537193a07e1aa2ba.png",
+    "static/media/bankapi.png": "/github.io/mon-portfolio/static/media/bankapi.0085af99a5a0acd6de23.png",
+    "static/media/profile.jpeg": "/github.io/mon-portfolio/static/media/profile.d11c831e95e4b03b139c.jpeg",
+    "static/media/sopeckocko.png": "/github.io/mon-portfolio/static/media/sopeckocko.f00f41416fdbf04b6a7b.png",
+    "static/media/fisheye.png": "/github.io/mon-portfolio/static/media/fisheye.8b376ba027e0181795ed.png",
+    "static/media/lachouetteagence.png": "/github.io/mon-portfolio/static/media/lachouetteagence.27bf28f01329af4c6413.png",
+    "static/media/billedapp.png": "/github.io/mon-portfolio/static/media/billedapp.5f53fc5cca26a10d69fc.png",
+    "static/media/lespetitsplats.png": "/github.io/mon-portfolio/static/media/lespetitsplats.fd9fbd52924465b1ceee.png",
+    "static/media/sportsee.png": "/github.io/mon-portfolio/static/media/sportsee.cc540790824db6e1898b.png",
+    "static/media/groupomania.png": "/github.io/mon-portfolio/static/media/groupomania.de9603df487ee0905562.png",
+    "static/media/wealth-health.png": "/github.io/mon-portfolio/static/media/wealth-health.89bad84a4eb9e861f570.png",
+    "static/media/library-date-react.png": "/github.io/mon-portfolio/static/media/library-date-react.550561a154957ff3e78e.png",
+    "static/media/gestion-de-projet.png": "/github.io/mon-portfolio/static/media/gestion-de-projet.e0da2530164713549545.png",
+    "static/media/logiciel.png": "/github.io/mon-portfolio/static/media/logiciel.6d13902275a91f4d7ee4.png",
+    "static/media/react.png": "/github.io/mon-portfolio/static/media/react.83dcb6b857f9093efd6a.png",
+    "index.html": "/github.io/mon-portfolio/index.html",
+    "main.55acd500.css.map": "/github.io/mon-portfolio/static/css/main.55acd500.css.map",
+    "main.4cbea01d.js.map": "/github.io/mon-portfolio/static/js/main.4cbea01d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55acd500.css",
+    "static/js/main.4cbea01d.js"
+  ]
+}
