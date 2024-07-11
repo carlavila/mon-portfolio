@@ -56,12 +56,12 @@ const Projects = () => {
       return ProjectsData;
     } else if (filter === "web") {
       return ProjectsData.filter((project) =>
-        [1, 2, 3, 6, 7, 8, 9, 10].includes(project.id)
+        [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12].includes(project.id)
       );
     } else if (filter === "design") {
-      return ProjectsData.filter((project) => project.id === 4);
+      return ProjectsData.filter((project) => project.id === 6);
     } else if (filter === "accessibility_seo") {
-      return ProjectsData.filter((project) => [1, 5, 11].includes(project.id));
+      return ProjectsData.filter((project) => [2, 7, 13].includes(project.id));
     }
   };
 

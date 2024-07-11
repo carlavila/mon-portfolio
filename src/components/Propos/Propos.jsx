@@ -2,7 +2,7 @@ import React from "react";
 import art from "../../media/art.png";
 import autonome from "../../media/autonome.png";
 import curieuse from "../../media/curieuse.png";
-import portrait from "../../media/IMG_4974.jpg";
+import portrait from "../../media/IMG_4974.jpeg";
 import "./propos.css";
 
 const Propos = () => {

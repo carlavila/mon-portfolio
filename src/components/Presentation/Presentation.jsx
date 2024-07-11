@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../media/profile.jpeg";
+import profile from "../../media/IMG_7709.jpg";
 import "./presentation.css";
 import { FaGithub } from "react-icons/fa";
 import { FiMessageCircle } from "react-icons/fi";
