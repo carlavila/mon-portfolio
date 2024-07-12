@@ -51,12 +51,14 @@
 
 @media screen and (max-width: 500px) {
 .navbar {
+	background-color: #c4aaf8;
+	opacity: 0.9;
 	width: 100%;
 	bottom: 2px;
 }
 .link-nav{
-	width:35px;
-	height: 35px;
+	width:40px;
+	height: 40px;
 }
 .icon-navbar {
 	font-size: 20px;

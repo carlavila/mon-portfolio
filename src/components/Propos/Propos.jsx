@@ -36,7 +36,7 @@ const Propos = () => {
           <div className="bloc-h3">
             <p className="p-propos">
               Je m'appelle Carla, j'ai 26 ans et je suis développeuse front end
-              junior.
+              junior spécialisée en ReactJs.
             </p>
             <p className="p-propos">
               J'ai découvert le monde du web en 2019, et après des études dans
